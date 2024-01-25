@@ -1,0 +1,49 @@
+<!-- Gutters -->
+<!-- When we are working with grid systems and columns, you will see gaps between these columns, these gaps are called gutters, these are padding between columns, they are used to space and align contents responsively in bootstrap grid system. These patterns are horizontal, usually set by padding left and right on each column and we use the offset method which uses a negative margin to move the column , the size of the gutters is 1.5rem which is 24px which works well with the grid system, guttes can be adjusted based on the breakpoint specific classes, we can modify horizontal gutters vertical gutters and all gutters  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    "
+    />
+    <style>
+      .h-10 {
+        height: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+
+    <div class="container bg-info mt-5 overflow-hidden">
+      <div class="row mb-3 bg-warning h-10 gx-5">
+        <!-- gx - gutter at x-axis -->
+        <div class="col">
+          <div class="bg-primary p-3 text-white">Columns</div>
+        </div>
+
+        <div class="col">
+          <div class="bg-primary p-3 text-white">Columns</div>
+        </div>
+      </div>
+      <div class="row mb-3 bg-warning h-10 gx-5">
+        <div class="col">
+          <div class="bg-primary p-3 text-white">Columns</div>
+        </div>
+        <div class="col">
+          <div class="bg-primary p-3 text-white">Columns</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>
